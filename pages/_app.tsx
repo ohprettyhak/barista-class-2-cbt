@@ -12,7 +12,11 @@ import customTheme from "@/config/theme";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <NextNProgress height={2} color="rgba(0, 0, 0, 0.16)" />
+      <NextNProgress
+        height={2}
+        color="rgba(0, 0, 0, 0.16)"
+        options={{ showSpinner: false }}
+      />
       <ChakraProvider resetCSS={true} theme={customTheme}>
         <DefaultSeo {...SEO} />
         <Component {...pageProps} />
