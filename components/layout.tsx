@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Container } from "@chakra-ui/react";
 
 import Navigation from "@/components/navigation";
+import Footer from "@/components/footer";
 
 export default function Layout({
   title,
@@ -12,9 +13,10 @@ export default function Layout({
   return (
     <>
       <Navigation />
-      <Container maxW="container.lg" pt={12}>
+      <Container as="main" maxW="container.lg" pt={12}>
         {children}
       </Container>
+      <Footer />
     </>
   );
 }
