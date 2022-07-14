@@ -1,4 +1,6 @@
+import { useEffect } from "react";
 import type { AppProps } from "next/app";
+import { useRouter } from "next/router";
 import { DefaultSeo } from "next-seo";
 import SEO from "@/config/seo-config";
 import { ChakraProvider } from "@chakra-ui/react";
@@ -10,6 +12,13 @@ import "@/styles/ridi-batang.css";
 import customTheme from "@/config/theme";
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const router = useRouter();
+
+  useEffect(() => {
+    if (router.asPath.startsWith("/barista-class-2-cbt/"))
+      router.push("https://cbt.haklee.me/barista-c2");
+  }, []);
+
   return (
     <>
       <NextNProgress
