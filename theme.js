@@ -18,6 +18,11 @@ const customTheme = extendTheme({
         },
       }),
     },
+    Heading: {
+      baseStyle: (props) => ({
+        fontFamily: "base",
+      }),
+    },
     Text: {
       baseStyle: (props) => ({
         transition: "all 0.1s ease-in-out",
@@ -44,14 +49,14 @@ const customTheme = extendTheme({
   styles: {
     global: (props) => ({
       body: {
-        lineHeight: "taller",
         fontFamily: "base",
+        lineHeight: "base",
       },
       a: {
         color: "gray.800",
       },
       "*::selection": {
-        background: mode("blackAlpha.200", "whiteAlpha.200")(props),
+        background: mode("blackAlpha.300", "whiteAlpha.300")(props),
         WebkitAppearance: "none",
       },
     }),
