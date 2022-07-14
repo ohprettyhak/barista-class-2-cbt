@@ -20,6 +20,7 @@ export default function Navigation() {
       borderBottomStyle="solid"
       borderBottomWidth="1px"
       borderBottomColor="gray.100"
+      backgroundColor="white"
     >
       <Container
         as={Flex}
