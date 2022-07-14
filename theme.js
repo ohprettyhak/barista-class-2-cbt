@@ -48,7 +48,11 @@ const customTheme = extendTheme({
   },
   styles: {
     global: (props) => ({
+      html: {
+        h: "100%",
+      },
       body: {
+        h: "100%",
         fontFamily: "base",
         lineHeight: "base",
       },
@@ -61,6 +65,7 @@ const customTheme = extendTheme({
       },
     }),
   },
+  shadows: { outline: "0 0 0 2px var(--chakra-colors-gray-400)" },
 });
 
 export default customTheme;

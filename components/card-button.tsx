@@ -15,6 +15,7 @@ export default function CardButton({
         w="100%"
         h="100%"
         p="4"
+        userSelect="none"
         boxShadow="sm"
         borderRadius="8px"
         backgroundColor={backgroundColor}
