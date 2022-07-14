@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   Container,
   Flex,
@@ -30,17 +31,23 @@ export default function Navigation() {
         <Flex alignItems="center">
           <Link href="/" passHref>
             <ChakraLink
+              display="flex"
+              gap={1}
               opacity="1"
+              userSelect="none"
+              alignItems="center"
               _hover={{
                 opacity: "0.7",
               }}
             >
+              <Image src="/favicon.ico" width="20px" height="20px" />
               {CONFIG.TITLE}
             </ChakraLink>
           </Link>
           <Text
             as="span"
             px={1.5}
+            py="3px"
             ml={2}
             color="gray.500"
             fontSize={2.5}
