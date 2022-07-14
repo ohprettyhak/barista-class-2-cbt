@@ -2,13 +2,13 @@ import { useEffect } from "react";
 import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import { DefaultSeo } from "next-seo";
-import SEO from "@/config/seo-config";
 import { ChakraProvider } from "@chakra-ui/react";
 import NextNProgress from "nextjs-progressbar";
 
 import "pretendard/dist/web/static/pretendard.css";
 import "@/styles/ridi-batang.css";
 
+import SEO from "@/config/seo-config";
 import customTheme from "@/config/theme";
 
 function MyApp({ Component, pageProps }: AppProps) {

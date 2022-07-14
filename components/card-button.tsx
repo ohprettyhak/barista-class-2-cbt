@@ -5,6 +5,9 @@ export default function CardButton({
   href,
   title,
   description,
+  textColor,
+  backgroundColor,
+  hoverBackgroundColor,
 }: CardButtonProps) {
   return (
     <Link href={href} passHref>
@@ -14,21 +17,39 @@ export default function CardButton({
         p="4"
         boxShadow="sm"
         borderRadius="8px"
-        backgroundColor="gray.50"
+        backgroundColor={backgroundColor}
         transition="all 0.2s ease-in-out"
-        _hover={{ backgroundColor: "gray.200" }}
+        _hover={{
+          backgroundColor: `${hoverBackgroundColor}`,
+        }}
       >
-        <Text fontSize="xl" fontWeight="bold">
+        <Text fontSize="xl" fontWeight="extrabold" color={textColor}>
           {`${title} →`}
         </Text>
-        <Text my={2}>{description}</Text>
+        <Text my={2} color={textColor}>
+          {description}
+        </Text>
       </ChakraLink>
     </Link>
   );
 }
 
+const defaultProps: CardButtonProps = {
+  href: "",
+  title: "",
+  description: "",
+  textColor: "gray.800",
+  backgroundColor: "gray.50",
+  hoverBackgroundColor: "gray.200",
+};
+
 type CardButtonProps = {
   href: string;
   title: string;
   description: string;
+  textColor?: string;
+  backgroundColor?: string;
+  hoverBackgroundColor?: string;
 };
+
+CardButton.defaultProps = defaultProps;
