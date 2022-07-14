@@ -1,10 +1,10 @@
 import Link from "next/link";
-import Image from "next/image";
 import {
   Container,
   Flex,
   Box,
   Text,
+  Image,
   Link as ChakraLink,
 } from "@chakra-ui/react";
 
@@ -40,18 +40,25 @@ export default function Navigation() {
                 opacity: "0.7",
               }}
             >
-              <Image src="/favicon.ico" width="20px" height="20px" />
+              <Image
+                src="https://cbt.haklee.me/barista-c2/favicon.ico"
+                w={5}
+                h={5}
+                alt="logo"
+              />
               {CONFIG.TITLE}
             </ChakraLink>
           </Link>
           <Text
             as="span"
+            h="100%"
             px={1.5}
             py="3px"
             ml={2}
             color="gray.500"
-            fontSize={2.5}
+            fontSize="10px"
             fontWeight="semibold"
+            userSelect="none"
             borderRadius="4px"
             backgroundColor="gray.100"
           >
