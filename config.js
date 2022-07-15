@@ -1,16 +1,22 @@
 module.exports = {
-  TITLE: "바리스타 2급 필기 CBT",
-  TITLE_EN: "Barista Class-2 CBT",
-  DESCRIPTION: "바리스타 2급 필기 CBT",
-  URL: "https://cbt.haklee.me/barista-c2",
-  EMAIL: "hello@haklee.me",
-  AUTHOR_NAME: "Hak Lee",
-  COPYRIGHT: "© Hak Lee",
-  OG_IMAGE: "/opengraph.png",
-  LOCALE: "ko",
-  VERSION: "0.0.1b",
+  title: "바리스타 2급 필기 CBT",
+  title_en: "Barista Class-2 CBT",
+  description: "바리스타 2급 필기 CBT",
+  url: "https://cbt.haklee.me/barista-c2",
+  email: "hello@haklee.me",
+  author_name: "Hak Lee",
+  copyright: "© 2022 Hak Lee",
+  og_image: "/opengraph.png",
+  locale: "ko",
+  version: "0.0.1b",
 
-  EXAM: [
+  social: {
+    github: "ohprettyhak",
+    instagram: "ohprettyhak",
+    linkedIn: `hak-lee-1444a91b8`,
+  },
+
+  exam: [
     { label: "2005년 1회", value: "2005-1" },
     { label: "2006년 2회", value: "2006-2" },
     { label: "2006년 3회", value: "2006-3" },

@@ -13,7 +13,14 @@ export default function Layout({
   return (
     <>
       <Navigation />
-      <Container as="main" maxW="container.lg" pt={12}>
+      <Container
+        as="main"
+        maxW="container.lg"
+        h="auto"
+        minH="100%"
+        pt={12}
+        pb={56}
+      >
         {children}
       </Container>
       <Footer />

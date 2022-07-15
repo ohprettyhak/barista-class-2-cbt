@@ -56,6 +56,9 @@ const customTheme = extendTheme({
         fontFamily: "base",
         lineHeight: "base",
       },
+      "#__next": {
+        h: "100%",
+      },
       a: {
         color: "gray.800",
       },

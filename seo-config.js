@@ -1,21 +1,21 @@
-const CONFIG = require("./config");
+const config = require("./config");
 
 export default {
-  titleTemplate: `%s | ${CONFIG.TITLE}`,
-  defaultTitle: CONFIG.TITLE,
-  description: CONFIG.DESCRIPTION,
-  url: CONFIG.URL,
+  titleTemplate: `%s - ${config.title}`,
+  defaultTitle: config.title,
+  description: config.description,
+  url: config.url,
   openGraph: {
-    title: CONFIG.TITLE,
-    description: CONFIG.DESCRIPTION,
-    url: CONFIG.URL,
+    title: config.title,
+    description: config.description,
+    url: config.url,
     images: [
       {
-        url: CONFIG.URL + CONFIG.OG_IMAGE,
+        url: config.url + config.og_image,
       },
     ],
     type: "website",
-    locale: CONFIG.LOCALE,
-    site_name: CONFIG.TITLE,
+    locale: config.locale,
+    site_name: config.title,
   },
 };
