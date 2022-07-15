@@ -1,15 +1,23 @@
-import { Grid, Heading, Text } from "@chakra-ui/react";
+import Link from "next/link";
+import { useState } from "react";
+import { Grid, Box, Button, Heading, Text } from "@chakra-ui/react";
 import { Select } from "chakra-react-select";
 
 import Layout from "@/components/layout";
 import CardButton from "@/components/card-button";
 
-import CONFIG from "@/config/config";
+import config from "@/config/config";
 
 export default function HomePage() {
+  const [examId, setExamId] = useState(config.exam[0].value);
+
+  const onChangeExamSelect = (event: any) => {
+    setExamId(event.value);
+  };
+
   return (
     <Layout>
-      <Heading mt={12} fontSize="lg">
+      <Heading mt={16} fontSize="lg">
         🔥 연습 문제
       </Heading>
       <Text mt="1">시험에 나오는 연습 문제를 풀어봅시다.</Text>
@@ -45,7 +53,7 @@ export default function HomePage() {
           description="모든 연습 문제를 풉니다."
         />
       </Grid>
-      <Heading mt={12} fontSize="lg">
+      <Heading mt={16} fontSize="lg">
         📝 모의고사
       </Heading>
       <Text mt="1">임의 50문제를 제한시간 내에 풀어봅시다.</Text>
@@ -66,7 +74,7 @@ export default function HomePage() {
           description="모의고사를 풉니다."
         />
       </Grid>
-      <Heading mt={12} fontSize="lg">
+      <Heading mt={16} fontSize="lg">
         🎓 기출문제
       </Heading>
       <Text mt="1">기출문제를 제한시간 내에 풀어봅시다.</Text>
@@ -75,14 +83,23 @@ export default function HomePage() {
           base: "100%",
         }}
         mt={6}
+        rowGap={8}
       >
         <Select
           size="md"
           focusBorderColor="gray.400"
           selectedOptionColor="gray"
-          options={CONFIG.EXAM}
-          defaultValue={CONFIG.EXAM[0]}
+          options={config.exam}
+          defaultValue={config.exam[0]}
+          onChange={onChangeExamSelect}
         />
+        <Box>
+          <Link href={`exam/${examId}`} passHref>
+            <Button as="a" borderRadius="8px">
+              문제 풀기 →
+            </Button>
+          </Link>
+        </Box>
       </Grid>
     </Layout>
   );

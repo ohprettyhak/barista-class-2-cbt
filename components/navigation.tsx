@@ -8,7 +8,7 @@ import {
   Link as ChakraLink,
 } from "@chakra-ui/react";
 
-import CONFIG from "@/config/config";
+import config from "@/config/config";
 
 export default function Navigation() {
   return (
@@ -47,7 +47,7 @@ export default function Navigation() {
                 h={5}
                 alt="logo"
               />
-              {CONFIG.TITLE}
+              {config.title}
             </ChakraLink>
           </Link>
           <Text
@@ -63,7 +63,7 @@ export default function Navigation() {
             borderRadius="4px"
             backgroundColor="gray.100"
           >
-            {CONFIG.VERSION}
+            {config.version}
           </Text>
         </Flex>
       </Container>
