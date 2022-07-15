@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import type { AppProps } from "next/app";
+import Head from "next/head";
 import { useRouter } from "next/router";
 import { DefaultSeo } from "next-seo";
 import { ChakraProvider } from "@chakra-ui/react";
@@ -21,6 +22,13 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
+      <Head>
+        <link
+          rel="shortcut icon"
+          href="https://cbt.haklee.me/barista-c2/favicon.ico"
+        />
+        <link rel="icon" href="https://cbt.haklee.me/barista-c2/favicon.ico" />
+      </Head>
       <NextNProgress
         height={2}
         color="rgba(0, 0, 0, 0.16)"
