@@ -19,7 +19,7 @@ export default function Layout({
         h="auto"
         minH="100%"
         pt={12}
-        pb={56}
+        pb={72}
       >
         {children}
       </Container>

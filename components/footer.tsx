@@ -17,7 +17,6 @@ export default function Footer() {
       as="footer"
       position="relative"
       h={56}
-      mt={20}
       py={12}
       borderTopColor="gray.200"
       borderTopStyle="solid"
