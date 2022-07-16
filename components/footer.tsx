@@ -16,8 +16,8 @@ export default function Footer() {
     <Box
       as="footer"
       position="relative"
-      h={56}
-      py={12}
+      h={48}
+      py={10}
       borderTopColor="gray.200"
       borderTopStyle="solid"
       borderTopWidth="1px"
