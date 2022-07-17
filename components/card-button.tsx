@@ -3,6 +3,7 @@ import { Text, Link as ChakraLink } from "@chakra-ui/react";
 
 export default function CardButton({
   href,
+  slug,
   title,
   description,
   textColor,
@@ -10,7 +11,14 @@ export default function CardButton({
   hoverBackgroundColor,
 }: CardButtonProps) {
   return (
-    <Link href={href} passHref>
+    <Link
+      href={
+        slug !== ""
+          ? { pathname: href, query: { slug: slug } }
+          : { pathname: href }
+      }
+      passHref
+    >
       <ChakraLink
         w="100%"
         h="100%"
@@ -37,6 +45,7 @@ export default function CardButton({
 
 const defaultProps: CardButtonProps = {
   href: "",
+  slug: "",
   title: "",
   description: "",
   textColor: "gray.800",
@@ -46,6 +55,7 @@ const defaultProps: CardButtonProps = {
 
 type CardButtonProps = {
   href: string;
+  slug: string;
   title: string;
   description: string;
   textColor?: string;
