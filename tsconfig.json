@@ -8,7 +8,7 @@
       "@/styles/*": ["styles/*"],
       "@/config/*": ["./*"],
       "@/utils/*": ["utils/*"],
-      "@/lib/*": ["lib/*"],
+      "@/libs/*": ["libs/*"],
       "@/types/*": ["types/*"]
     },
     "allowJs": true,

@@ -1,0 +1,15 @@
+[
+  {
+    "id": 17,
+    "title": "아래 보기의 조건으로 만들어진 커피를 무엇이라고 부르는가?",
+    "description": "Green Bean 상태의 커피콩을 증기로 쪄, 수분율이 50~60%가 되게 한다.<br />솔벤트, 물 CO₂ 등을 사용하여 커피와 카페인을 분리한다.<br />다시 커피 성분을 넣고 열풍 건조시켜 수분율을 13%로 맞춘다.",
+    "example": [
+      "맥심(Maxim)커피",
+      "인스턴트(Instant)커피",
+      "헤이즐넛(Hazel Nut)향커피",
+      "디카페인(Decaffeinated)커피"
+    ],
+    "answer": "디카페인(Decaffeinated)커피",
+    "commentary": ""
+  }
+]
