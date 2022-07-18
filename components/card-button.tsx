@@ -35,7 +35,7 @@ export default function CardButton({
         <Text fontSize="xl" fontWeight="extrabold" color={textColor}>
           {`${title} →`}
         </Text>
-        <Text my={2} color={textColor}>
+        <Text my={1.5} color={textColor}>
           {description}
         </Text>
       </ChakraLink>
