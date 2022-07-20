@@ -23,10 +23,10 @@ export default function PracticePage({ slug, data }: PracticeProps) {
     let buttons: Array<HTMLElement | null> = [];
     let correct = -1;
 
-    _.range(4).map((_, number) => {
-      texts.push(document.getElementById(`text-example-${number + 1}`));
-      buttons.push(document.getElementById(`btn-example-${number + 1}`));
-      if (problems![current].answer === texts[number]?.innerHTML) correct = number;
+    _.range(4).map((_, idx) => {
+      texts.push(document.getElementById(`text-example-${idx + 1}`));
+      buttons.push(document.getElementById(`btn-example-${idx + 1}`));
+      if (problems![current].answer === texts[idx]?.innerHTML) correct = idx;
     });
 
     if (buttons[correct]) buttons[correct]!.style.backgroundColor = 'var(--chakra-colors-blue-100)';
@@ -45,8 +45,8 @@ export default function PracticePage({ slug, data }: PracticeProps) {
     }
 
     setCurrent(current + direction);
-    _.range(4).map((_, number) => {
-      document.getElementById(`btn-example-${number + 1}`)!.style.removeProperty('background-color');
+    _.range(4).map((_, idx) => {
+      document.getElementById(`btn-example-${idx + 1}`)!.style.removeProperty('background-color');
     });
   }
 
@@ -58,17 +58,17 @@ export default function PracticePage({ slug, data }: PracticeProps) {
 
     let correctCount = 0;
     let wrongCount = 0;
-    solve.map((problem) => {
-      if (problem.correct) correctCount += 1;
-      if (problem.wrong) wrongCount += 1;
+    solve.map((it) => {
+      if (it.correct) correctCount += 1;
+      if (it.wrong) wrongCount += 1;
     });
     setResult({ visible: true, correctCount: correctCount, wrongCount: wrongCount });
   }
 
   function solveWorngProblem() {
     let temp: Array<ProblemDataProps> = [];
-    solve.map((it, number) => {
-      if (it.wrong) temp.push(problems![number]);
+    solve.map((it, idx) => {
+      if (it.wrong) temp.push(problems![idx]);
     });
     setProblems(temp);
     setResult({ visible: false, correctCount: 0, wrongCount: 0 });
@@ -150,10 +150,10 @@ export default function PracticePage({ slug, data }: PracticeProps) {
                   />
                 )}
                 <Divider my={5} />
-                {_.shuffle(problems[current].example).map((it, number) => (
+                {_.shuffle(problems[current].example).map((it, idx) => (
                   <Button
-                    key={number}
-                    id={`btn-example-${number + 1}`}
+                    key={idx}
+                    id={`btn-example-${idx + 1}`}
                     display="flex"
                     h="auto"
                     my={0.5}
@@ -166,7 +166,7 @@ export default function PracticePage({ slug, data }: PracticeProps) {
                     backgroundColor={
                       solve.length >= current + 1 && problems[current]!.answer === it ? 'blue.100' : 'transparent'
                     }
-                    onClick={() => showCorrectAnswer(number)}
+                    onClick={() => showCorrectAnswer(idx)}
                   >
                     <Text
                       as="span"
@@ -183,9 +183,9 @@ export default function PracticePage({ slug, data }: PracticeProps) {
                       textAlign="center"
                       verticalAlign="center"
                     >
-                      {number + 1}
+                      {idx + 1}
                     </Text>
-                    <Text as="span" id={`text-example-${number + 1}`} display="inline-block">
+                    <Text as="span" id={`text-example-${idx + 1}`} display="inline-block">
                       {it}
                     </Text>
                   </Button>
