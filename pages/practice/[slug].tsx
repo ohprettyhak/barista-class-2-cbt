@@ -2,22 +2,19 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import fs from 'fs';
 import path from 'path';
-import shuffle from 'array-shuffle';
+import _ from 'lodash';
 import { Flex, Box, Heading, Text, Button, Divider, useToast } from '@chakra-ui/react';
 
 import Layout from '@/components/layout';
-import { PracticeProps, ProblemDataProps } from '@/types/types';
+import { PracticeProps, ProblemDataProps, ProblemStates, ProblemResult } from '@/types/types';
 
 export default function PracticePage({ slug, data }: PracticeProps) {
   const [problems, setProblems] = useState<Array<ProblemDataProps> | null>(null);
   const [current, setCurrent] = useState(0);
-  const [result, setResult] = useState(false);
+  const [result, setResult] = useState<ProblemResult>({ visible: false, correctCount: 0, wrongCount: 0 });
+  const [solve, setSolve] = useState<Array<ProblemStates>>([]);
 
-  const [corrects, setCorrects] = useState<Array<number>>([]);
-  const [wrongs, setWrongs] = useState<Array<number>>([]);
-  const [solved, setSolved] = useState<Array<number>>([]);
-
-  useEffect(() => setProblems(shuffle(data)), [data]);
+  useEffect(() => setProblems(_.shuffle(data)), [data]);
 
   const toast = useToast();
 
@@ -26,71 +23,56 @@ export default function PracticePage({ slug, data }: PracticeProps) {
     let buttons: Array<HTMLElement | null> = [];
     let correct = -1;
 
-    Array(4)
-      .fill(0)
-      .map((_, number) => {
-        texts.push(document.getElementById(`text-example-${number + 1}`));
-        buttons.push(document.getElementById(`btn-example-${number + 1}`));
-        if (problems![current].answer === texts[number]?.innerHTML) correct = number;
-      });
+    _.range(4).map((_, number) => {
+      texts.push(document.getElementById(`text-example-${number + 1}`));
+      buttons.push(document.getElementById(`btn-example-${number + 1}`));
+      if (problems![current].answer === texts[number]?.innerHTML) correct = number;
+    });
 
     if (buttons[correct]) buttons[correct]!.style.backgroundColor = 'var(--chakra-colors-blue-100)';
-
     if (correct === event) {
-      if (wrongs.indexOf(current) === -1 && corrects.indexOf(current) === -1) corrects.push(current);
+      if (solve.length < current + 1) solve.push({ correct: true, wrong: false });
     } else {
-      if (wrongs.indexOf(current) === -1 && corrects.indexOf(current) === -1) wrongs.push(current);
+      if (solve.length < current + 1) solve.push({ correct: false, wrong: true });
       if (buttons[event]) buttons[event]!.style.backgroundColor = 'var(--chakra-colors-red-100)';
     }
-    if (solved.indexOf(current) === -1) solved.push(current);
   }
 
-  function checkIsSolved(): boolean {
-    if (wrongs.indexOf(current) === -1 && corrects.indexOf(current) === -1) {
-      toast({
-        title: '문제를 풀어주세요',
-        status: 'error',
-        variant: 'subtle',
-        duration: 3000,
-        isClosable: true,
-      });
-      return false;
+  function getOtherProblem(direction: number) {
+    if (direction === 1 && solve.length < current + 1) {
+      toast({ title: '문제를 풀어주세요', status: 'error', variant: 'subtle', duration: 3000 });
+      return;
     }
-    return true;
-  }
 
-  function getNextProblem() {
-    if (!checkIsSolved()) return;
-    setCurrent(current + 1);
-    Array(4)
-      .fill(0)
-      .map((_, number) => {
-        document.getElementById(`btn-example-${number + 1}`)!.style.removeProperty('background-color');
-      });
-  }
-
-  function getPreviosProblem() {
-    setCurrent(current - 1);
-    Array(4)
-      .fill(0)
-      .map((_, number) => {
-        document.getElementById(`btn-example-${number + 1}`)!.style.removeProperty('background-color');
-      });
+    setCurrent(current + direction);
+    _.range(4).map((_, number) => {
+      document.getElementById(`btn-example-${number + 1}`)!.style.removeProperty('background-color');
+    });
   }
 
   function getResult() {
-    if (!checkIsSolved()) return;
-    setResult(true);
+    if (solve.length < current + 1) {
+      toast({ title: '문제를 풀어주세요', status: 'error', variant: 'subtle', duration: 3000 });
+      return;
+    }
+
+    let correctCount = 0;
+    let wrongCount = 0;
+    solve.map((problem) => {
+      if (problem.correct) correctCount += 1;
+      if (problem.wrong) wrongCount += 1;
+    });
+    setResult({ visible: true, correctCount: correctCount, wrongCount: wrongCount });
   }
 
   function solveWorngProblem() {
     let temp: Array<ProblemDataProps> = [];
-    wrongs.map((it, _) => temp.push(problems![it]));
+    solve.map((it, number) => {
+      if (it.wrong) temp.push(problems![number]);
+    });
     setProblems(temp);
-    setResult(false);
-    setCorrects([]);
-    setWrongs([]);
-    setSolved([]);
+    setResult({ visible: false, correctCount: 0, wrongCount: 0 });
+    setSolve([]);
     setCurrent(0);
   }
 
@@ -98,7 +80,7 @@ export default function PracticePage({ slug, data }: PracticeProps) {
     <Layout>
       {problems && (
         <>
-          {result ? (
+          {result.visible ? (
             <Box
               width="100%"
               maxWidth="xl"
@@ -118,11 +100,11 @@ export default function PracticePage({ slug, data }: PracticeProps) {
               <Divider my={5} />
               <Flex flexDirection="column" gap={1.5}>
                 <Text textAlign="center">총 문제 : {problems.length}</Text>
-                <Text textAlign="center">맞춘 문제 : {corrects.length}</Text>
-                <Text textAlign="center">틀린 문제 : {wrongs.length}</Text>
+                <Text textAlign="center">맞춘 문제 : {result.correctCount}</Text>
+                <Text textAlign="center">틀린 문제 : {result.wrongCount}</Text>
               </Flex>
               <Text my={3} fontWeight="semibold" textAlign="center">
-                백점 기준 환산 : {Math.round(((100 * corrects.length) / problems.length) * 100) / 100}점
+                백점 기준 환산 : {Math.round(((100 * result.correctCount) / problems.length) * 100) / 100}점
               </Text>
               <Flex mt={6} justifyContent="center" gap={4}>
                 <Link href="/" passHref>
@@ -130,7 +112,7 @@ export default function PracticePage({ slug, data }: PracticeProps) {
                     &#8592; 메인 가기
                   </Button>
                 </Link>
-                {wrongs.length !== 0 && (
+                {result.wrongCount > 0 && (
                   <Button h="auto" px={3} py={2} fontSize="sm" onClick={() => solveWorngProblem()}>
                     ⟳ 틀린 문제 다시 풀기
                   </Button>
@@ -168,7 +150,7 @@ export default function PracticePage({ slug, data }: PracticeProps) {
                   />
                 )}
                 <Divider my={5} />
-                {shuffle(problems[current].example).map((it, number) => (
+                {_.shuffle(problems[current].example).map((it, number) => (
                   <Button
                     key={number}
                     id={`btn-example-${number + 1}`}
@@ -182,7 +164,7 @@ export default function PracticePage({ slug, data }: PracticeProps) {
                     lineHeight="base"
                     whiteSpace="normal"
                     backgroundColor={
-                      solved.indexOf(current) !== -1 && problems[current]!.answer === it ? 'blue.100' : 'transparent'
+                      solve.length >= current + 1 && problems[current]!.answer === it ? 'blue.100' : 'transparent'
                     }
                     onClick={() => showCorrectAnswer(number)}
                   >
@@ -215,7 +197,7 @@ export default function PracticePage({ slug, data }: PracticeProps) {
                   p={3}
                   fontSize="sm"
                   disabled={current === 0 ? true : false}
-                  onClick={() => getPreviosProblem()}
+                  onClick={() => getOtherProblem(-1)}
                 >
                   &#8592; 이전 문제
                 </Button>
@@ -224,7 +206,7 @@ export default function PracticePage({ slug, data }: PracticeProps) {
                   px={3}
                   py={2}
                   fontSize="sm"
-                  onClick={current === problems.length - 1 ? () => getResult() : () => getNextProblem()}
+                  onClick={current === problems.length - 1 ? () => getResult() : () => getOtherProblem(1)}
                 >
                   {current === problems.length - 1 ? '결과 확인' : '다음 문제'}
                   &nbsp;&#8594;

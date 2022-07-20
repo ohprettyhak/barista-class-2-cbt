@@ -11,3 +11,14 @@ export type ProblemDataProps = {
   answer: string;
   commentary: string;
 };
+
+export type ProblemStates = {
+  correct: boolean;
+  wrong: boolean;
+};
+
+export type ProblemResult = {
+  visible: boolean;
+  correctCount: number;
+  wrongCount: number;
+};
