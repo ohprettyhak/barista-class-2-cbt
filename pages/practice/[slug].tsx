@@ -94,7 +94,7 @@ export default function PracticePage({ slug, data }: PracticeProps) {
               <Heading fontSize="xl" textAlign="center">
                 연습 결과
               </Heading>
-              <Text mt={1} fontSize="sm" textAlign="center">
+              <Text mt={1} color="gray.500" fontSize="sm" textAlign="center">
                 {slug}
               </Text>
               <Divider my={5} />
@@ -146,6 +146,10 @@ export default function PracticePage({ slug, data }: PracticeProps) {
                     borderWidth="1px"
                     dangerouslySetInnerHTML={{
                       __html: problems[current].description,
+                    }}
+                    sx={{
+                      li: { listStyle: 'none', padding: '1px 0' },
+                      img: { margin: '0 auto' },
                     }}
                   />
                 )}
