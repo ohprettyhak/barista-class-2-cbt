@@ -148,7 +148,7 @@ export default function PracticePage({ slug, data }: PracticeProps) {
                       __html: problems[current].description,
                     }}
                     sx={{
-                      li: { listStyle: 'none', padding: '1px 0' },
+                      li: { listStyle: 'none', padding: '2px 0' },
                       img: { margin: '0 auto' },
                     }}
                   />

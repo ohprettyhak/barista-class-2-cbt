@@ -640,19 +640,6 @@
     "commentary": ""
   },
   {
-    "id": 60,
-    "title": "커핑시 이용되는 용어들이다. 부적합한 설명은?",
-    "description": "",
-    "example": [
-      "커핑시 이용되는 용어들이다. 부적합한 설명은?",
-      "Aroma - 후각으로 느낄수 있는 커피에서 증발되는 냄새",
-      "Aftertaste - 커피의 농도에 따른 무게감과 밀도에 대한 감각",
-      "Flavor - 입속에 커피를 머금었을 때 후각과 미각으로 느껴지는 감각"
-    ],
-    "answer": "Aftertaste - 커피의 농도에 따른 무게감과 밀도에 대한 감각",
-    "commentary": ""
-  },
-  {
     "id": 61,
     "title": "커피를 로스팅 할 때 일어나는 성분의 화학적 변화에 대한 설명 중 틀린 것은?",
     "description": "",
@@ -1392,6 +1379,122 @@
       "드럼 외부의 공기 흐름과 열량을 조절하는 장치는 댐퍼이다."
     ],
     "answer": "드럼 외부의 공기 흐름과 열량을 조절하는 장치는 댐퍼이다.",
+    "commentary": ""
+  },
+  {
+    "id": 161,
+    "title": "커피 로스팅 시 생두에 열을 가하는 방식에 따라 로스팅방식이 결정된다. 생두에 열을 전달하는 열의 종류에 해당하지 않는 것은?",
+    "description": "",
+    "example": ["대류에 의한 열", "복사에 의한 열", "전도에 의한 열", "자외선에 의한 열"],
+    "answer": "자외선에 의한 열",
+    "commentary": ""
+  },
+  {
+    "id": 162,
+    "title": "커피향기와 맛에 깊은 관계가 있는 성분으로 아라비카 종에 12-16%가 들어있는 커피 내의 주요성분은?",
+    "description": "",
+    "example": ["클로로겐산", "카페인", "지방성분", "탄닌산"],
+    "answer": "지방성분",
+    "commentary": ""
+  },
+  {
+    "id": 164,
+    "title": "커피를 로스팅하면 당의 갈변화(Sugar browning)가 일어나 향기성분이 생성된다. 다음 향기 중에서 로스팅 정도가 가장 높은 단계에서 생성되는 향기는?",
+    "description": "",
+    "example": ["Nutty(고소한 향)", "Caramelly(캐러멜 향)", "Chocolaty(초콜릿 향)", "Flowery(꽃 향)"],
+    "answer": "Chocolaty(초콜릿 향)",
+    "commentary": ""
+  },
+  {
+    "id": 165,
+    "title": "추출한 커피에 대한 커핑(Cupping) 시 알아야 할 용어에 대한 다음 설명 중 틀린 것은?",
+    "description": "",
+    "example": [
+      "Taste - 혀로 느낄 수 있는 커피의 단맛, 신맛 및 쓴맛",
+      "Aroma - 후각으로 느낄 수 있는 커피에서 증발되는 향",
+      "Flavor - 입안에 커피를 머금었을 때 후각과 입에 느껴지는 맛과 향",
+      "Aftertaste - 커피가 입안에 있을 때 지속적으로 느낄 수 있는 맛"
+    ],
+    "answer": "Aftertaste - 커피가 입안에 있을 때 지속적으로 느낄 수 있는 맛",
+    "commentary": ""
+  },
+  {
+    "id": 167,
+    "title": "추출한 커피를 오래 가열하면서 보관하면 커피콩의 단백질 성분이 변화하면서 나타나는 맛의 결함은?",
+    "description": "",
+    "example": ["Tarry(탄 맛)", "Briny(짠맛)", "Scorched(강한 탄내)", "Woody(나무 맛)"],
+    "answer": "Tarry(탄 맛)",
+    "commentary": ""
+  },
+  {
+    "id": 168,
+    "title": "다음 중 SCAA의 기준에 따른 커피의 기본(Primary) 맛이 아닌 것은?",
+    "description": "",
+    "example": ["신맛", "단맛", "쓴맛", "짠맛"],
+    "answer": "쓴맛",
+    "commentary": ""
+  },
+  {
+    "id": 169,
+    "title": "다음 향기의 강도를 표현하는 용어 중 맞는 것은?",
+    "description": "",
+    "example": [
+      "Flat : 풍성하다. 풍부하고 강하다는 의미.",
+      "Full : 풍부하다. 강도가 강한 것은 아니다.",
+      "Rich : 무난하다. 강하지도 다양하지도 않다.",
+      "Rounded : 빈약하다, 향이 거의 없는 경우"
+    ],
+    "answer": "Full : 풍부하다. 강도가 강한 것은 아니다.",
+    "commentary": ""
+  },
+  {
+    "id": 170,
+    "title": "커피 추출액에서 소독내가 심하게 나는 맛의 결함으로, 커피 열매가 나무에 달린 채 건조가 진행되어 미생물과 효소가 커피열매에 작용하여 생기는 향미의 결함은? 이런 결함은 브라질의 건식 아라비카 콩에서 주로 나타난다.",
+    "description": "",
+    "example": ["Woody", "Hidy", "Grassy", "Rioy"],
+    "answer": "Rioy",
+    "commentary": ""
+  },
+  {
+    "id": 171,
+    "title": "다음에 설명에서 ( ) 안에 들어간 단어를 제대로 연결한 것은?",
+    "description": "음식이나 음료를 섭취하거나 섭취한 후, 입안에서 물리적으로 느껴지는 촉감을 ( )이라 하며, 입안에 있는 말초 신경은 커피의 점도와 미끈함을 감지하는데 이 두가지를 집합적으로 ( )라 부른다.",
+    "example": ["Flavor, Aftertaste", "Mouthfeel, Body", "Aftertaste, Mouthfeel", "Mouthfeel, Flavor"],
+    "answer": "Mouthfeel, Body",
+    "commentary": ""
+  },
+  {
+    "id": 172,
+    "title": "월드 컵 테이스터스 챔피언 대회(WCC) 경기규정의 커피 추출조건을 틀리게 설명한 것은?",
+    "description": "",
+    "example": [
+      "커피의 분쇄는 품종별로 다른 크기로 분쇄된다.",
+      "추출 온도는 92~96℃ 이다.",
+      "물 1리터(L) 당 60g의 원두를 사용하여 추출한다.",
+      "각 커피의 추출 시간은 4~6분 정도이다."
+    ],
+    "answer": "커피의 분쇄는 품종별로 다른 크기로 분쇄된다.",
+    "commentary": ""
+  },
+  {
+    "id": 173,
+    "title": "SCAA의 Specialty Coffee로 구분하는 기준에 대한 것이다. 틀린 것은?",
+    "description": "",
+    "example": [
+      "5%이내의 크기편차.",
+      "Category 1의 결점수가 없어야 할 것.",
+      "Quaker가 없을 것.",
+      "Cupping 점수 80점 이상일 것."
+    ],
+    "answer": "Cupping 점수 80점 이상일 것.",
+    "commentary": ""
+  },
+  {
+    "id": 174,
+    "title": "커피를 살 때 먼저 고려해야 될 사항 두 가지를 꼽는다면 무엇을 고려해야 될까?",
+    "description": "",
+    "example": ["제조 회사와 품종", "커피의 품질과 신선함", "커피의 분쇄도와 포장재", "커피의 품질과 가격"],
+    "answer": "커피의 품질과 신선함",
     "commentary": ""
   }
 ]
