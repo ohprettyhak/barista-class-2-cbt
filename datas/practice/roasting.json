@@ -1577,11 +1577,103 @@
     "commentary": ""
   },
   {
-    "id": 191,
-    "title": "",
+    "id": 192,
+    "title": "커피를 볶을 때 기본적인 세 가지 단계에 속하지 않는 것은?",
     "description": "",
-    "example": ["", "", "", ""],
-    "answer": "",
+    "example": ["건조(Dry)", "열분해(Pyrolysis)", "냉각(Cooling)", "포장(Packing)"],
+    "answer": "포장(Packing)",
+    "commentary": ""
+  },
+  {
+    "id": 193,
+    "title": "커피 로스팅 시 일어나는 물리적 현상으로 옳지 않은 것은?",
+    "description": "",
+    "example": [
+      "원두 부피의 지속적 감소",
+      "수분이 증발하고 팽창되면서 크랙이 발생",
+      "커피 조직이 다공질화하면서 추출 조건이 좋아짐.",
+      "온도의 상승으로 원두와 실버스킨의 분리"
+    ],
+    "answer": "원두 부피의 지속적 감소",
+    "commentary": ""
+  },
+  {
+    "id": 194,
+    "title": "로스팅의 8단계 분류 중 프렌치로스트(French roast)에 해당하는 SCAA 구분 명칭은?",
+    "description": "",
+    "example": ["Medium roast", "Moderately dark roast", "Dark roast", "Very dark roast"],
+    "answer": "Dark roast",
+    "commentary": ""
+  },
+  {
+    "id": 199,
+    "title": "커피생두의 로스팅에 의하여 열분해 되어 로스팅으로 인한 플레이버(Flavor)와 비타민인 Niacin이 생성되는 것으로 알려져 있는 성분은?",
+    "description": "",
+    "example": ["Cafestol", "Chlorogenic acid류", "Trigonelline", "Caffeine"],
+    "answer": "Trigonelline",
+    "commentary": ""
+  },
+  {
+    "id": 200,
+    "title": "생두의 화학성분 중에 산화적 스트레스 예방 및 유해 산소류 제거능력 등의 항산화 효능을 보유한 성분으로 옳은 것은?",
+    "description": "",
+    "example": [
+      "아세트 산(acetic acid)",
+      "글루탐산(glutamic acid)",
+      "클로로젠산(chlorogenic acid)",
+      "옥살산(oxalic acid)"
+    ],
+    "answer": "클로로젠산(chlorogenic acid)",
+    "commentary": ""
+  },
+  {
+    "id": 201,
+    "title": "다음은 향기에 대한 원칙이다. 틀린 것은?",
+    "description": "",
+    "example": [
+      "향기는 기체 상태로만 느낄 수 있다.",
+      "커피 향기의 분자량에 따른 특징은 일반적으로 분자량이 작을수록 날카롭고 거칠게 느껴진다.",
+      "커피의 향기는 원인요소에 따른 특징과 분자량에 따른 특징에 의한 이중 구조로 파악할 수 있다.",
+      "향기에 대한 판단은 일반적으로 경험이나 훈련에 의해 쌓인 기억에 의존한다."
+    ],
+    "answer": "커피 향기의 분자량에 따른 특징은 일반적으로 분자량이 작을수록 날카롭고 거칠게 느껴진다.",
+    "commentary": ""
+  },
+  {
+    "id": 202,
+    "title": "커피 향기의 생성 원리에 의한 분류로 적합하지 않은 것은?",
+    "description": "",
+    "example": ["효소작용", "갈변반응", "건열반응", "중합반응"],
+    "answer": "중합반응",
+    "commentary": ""
+  },
+  {
+    "id": 203,
+    "title": "효소작용에 의해 생성된 향기가 아닌 것은",
+    "description": "",
+    "example": ["야채 향기", "과일 향기", "캔디 향기", "꽃향기"],
+    "answer": "캔디 향기",
+    "commentary": ""
+  },
+  {
+    "id": 204,
+    "title": "갈변반응에 의해서 나타나는 향기는?",
+    "description": "",
+    "example": ["두류향기", "물엿향기", "감귤향기", "딸기향기"],
+    "answer": "물엿향기",
+    "commentary": ""
+  },
+  {
+    "id": 206,
+    "title": "커피를 추출할 때 주의해야 할 점 등에 대해 바르게 설명하지 못한 것은 어느 것 인가?",
+    "description": "",
+    "example": [
+      "커피를 추출할 때 물의 온도는 일반적으로 로스팅의 정도에 따라 다르게 적용하여 추출하여야 한다.",
+      "커피를 추출할 때 커피의 분쇄 크기는 추출 시간, 즉 맛에 직접적으로 영향을 미치므로 추구하는 맛에 따라 다르게 분쇄한다.",
+      "커피를 추출할 때 가장 중요하게 생각해야 할 부분은 추출 원리상 투과식인지 혹은 침출식인지를 고려해야 한다.",
+      "커피를 추출하기 위해서는 가장 먼저 커피의 상태를 살펴야 한다."
+    ],
+    "answer": "커피를 추출할 때 가장 중요하게 생각해야 할 부분은 추출 원리상 투과식인지 혹은 침출식인지를 고려해야 한다.",
     "commentary": ""
   }
 ]
