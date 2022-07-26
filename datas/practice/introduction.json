@@ -163,19 +163,6 @@
     "commentary": ""
   },
   {
-    "id": 17,
-    "title": "아래 보기의 조건으로 만들어진 커피를 무엇이라고 부르는가?",
-    "description": "Green Bean 상태의 커피콩을 증기로 쪄, 수분율이 50~60%가 되게 한다.<br />솔벤트, 물 CO₂ 등을 사용하여 커피와 카페인을 분리한다.<br />다시 커피 성분을 넣고 열풍 건조시켜 수분율을 13%로 맞춘다.",
-    "example": [
-      "맥심(Maxim) 커피",
-      "인스턴트(Instant) 커피",
-      "헤이즐넛(Hazel Nut)향 커피",
-      "디카페인(Decaffeinated) 커피"
-    ],
-    "answer": "디카페인(Decaffeinated) 커피",
-    "commentary": ""
-  },
-  {
     "id": 18,
     "title": "우유 단백질에 속하는 성분이 아닌 것은?",
     "description": "",
@@ -911,19 +898,6 @@
     "description": "",
     "example": ["콩고", "탄자니아", "에티오피아", "예멘"],
     "answer": "콩고",
-    "commentary": ""
-  },
-  {
-    "id": 93,
-    "title": "Washed coffee의 처리방법의 순서로 옳은 것은?",
-    "description": "",
-    "example": [
-      "hulling → drying → fermentation → pulping → washing → grading → cleaning",
-      "pulping → fermentation → washing → hulling → drying → grading → cleaning",
-      "pulping → fermentation → washing → drying → hulling → cleaning → grading",
-      "fermentation → drying → washing → pulping → hulling → cleaning → grading"
-    ],
-    "answer": "pulping → fermentation → washing → drying → hulling → cleaning → grading",
     "commentary": ""
   },
   {
@@ -3197,6 +3171,135 @@
   },
   {
     "id": 491,
+    "title": "다음 ( )를 올바르게 채운 것은?",
+    "description": "커피를 처음 언급한 사람은 아랍의 의사인 라제스(Rhazes)인데 그는 커피를 ( )라 불렀으며, 독일인 라우볼프(Rauwolf)는 ( )라고 언급하였다.<br />그 뒤 커피는 이슬람어 ( )에서 터키어 ( )를 거쳐 오늘날의 Coffee라는 명칭이 탄생되었다고 전해진다.",
+    "example": [
+      "Bunca - Chaube - Qahwah - Kahve",
+      "Chaube - Bunca - Qahwah - Kahve",
+      "Bunca - Chaube - Kahve - Qahwah",
+      "Chaube - Bunca - Kahve - Qahwah"
+    ],
+    "answer": "Bunca - Chaube - Qahwah - Kahve",
+    "commentary": ""
+  },
+  {
+    "id": 493,
+    "title": "다음 중 결점두 발생의 원인으로 볼 수 없는 것은?",
+    "description": "",
+    "example": ["수확", "재배", "보관", "로스팅"],
+    "answer": "로스팅",
+    "commentary": ""
+  },
+  {
+    "id": 494,
+    "title": "다음 커피 생산국가의 등급 분류기준이 잘못 연결된 것은?",
+    "description": "",
+    "example": ["에티오피아 - Supremo", "케냐 - AA", "하와이 - Kona Extra Fancy", "인도네시아 - Grade 1"],
+    "answer": "에티오피아 - Supremo",
+    "commentary": ""
+  },
+  {
+    "id": 496,
+    "title": "커피 열매 안에 한 개의 콩만을 가지는 경우를 피베리라 부른다. 피베리는 둥근 모양을 하고 있어 다른 표현으로 불리기도 한다. 스페인어로 달팽이란 뜻을 가진 단어는?",
+    "description": "",
+    "example": ["트라이앵글러 빈", "플랫 빈", "카라콜리로", "파치먼트"],
+    "answer": "카라콜리로",
+    "commentary": ""
+  },
+  {
+    "id": 498,
+    "title": "커피 생두(뉴크롭)의 일반적인 수분의 함량은?",
+    "description": "",
+    "example": ["20%", "12%", "8%", "6%"],
+    "answer": "12%",
+    "commentary": ""
+  },
+  {
+    "id": 501,
+    "title": "커피나무 재배에 적합한 토양이 올바르게 선택된 것은?",
+    "description": "<ul><li>가. 유기질이 풍부한 화산 토양</li><li>나. 현무암성 토양</li><li>다. 화강암성 토양</li><li>라. 점토성 토양</li></ul>",
+    "example": ["가, 나", "가, 다", "나, 라", "다, 라"],
+    "answer": "가, 나",
+    "commentary": ""
+  },
+  {
+    "id": 504,
+    "title": "커피나무의 재배와 관련된 내용이다. 옳지 않은 것은?",
+    "description": "",
+    "example": [
+      "커피종자를 개량하는 목적은 단위면적당 많은 생산량을 얻기 위해서 병충해에 강한 품종을 개발하기 위해서이다.",
+      "묘목은 약 3년이 지난 후 꽃이 피고 열매를 맺으며, 주로 건기 후 비가 오면 꽃이 피고 꽃이 떨어진 자리에서 열매가 자란다.",
+      "일반적으로 발아 후 1-2주 지난 시점에 건강 상태가 양호한 나무들을 골라 재배할 곳에 옮겨 심는다.",
+      "커피나무 재배에 적합한 토양은 유기성 물질이 풍부하고, 배수가 잘되는 토양이 적합하다."
+    ],
+    "answer": "일반적으로 발아 후 1-2주 지난 시점에 건강 상태가 양호한 나무들을 골라 재배할 곳에 옮겨 심는다.",
+    "commentary": ""
+  },
+  {
+    "id": 507,
+    "title": "커피가공 과정에서 건조 후 탈곡하는 과정으로 묶여 있는 것?",
+    "description": "",
+    "example": ["Polishing - Cleaning", "Grading - Sorting", "Hulling - Husking", "Picking - Stripping"],
+    "answer": "Hulling - Husking",
+    "commentary": ""
+  },
+  {
+    "id": 508,
+    "title": "기계 수확(Machinery harvesting)시 미숙한 열매가 몇 % 이하일 때 수확을 시작하는가?",
+    "description": "",
+    "example": ["5%", "10%", "15%", "20%"],
+    "answer": "5%",
+    "commentary": ""
+  },
+  {
+    "id": 514,
+    "title": "Quaker에 대한 다음 설명 중 가장 거리가 먼 것은?",
+    "description": "",
+    "example": [
+      "Quaker는 체리 수확 시 생기는 결점두이다.",
+      "Quaker는 생두 가공과정에서 쉽게 발견되기 어렵다.",
+      "Quaker는 결점두에 해당되지 않는다.",
+      "Quaker는 로스팅 후 발견될 가능성이 크다."
+    ],
+    "answer": "Quaker는 결점두에 해당되지 않는다.",
+    "commentary": ""
+  },
+  {
+    "id": 515,
+    "title": "다음 커피 명칭의 예 중 잘못 짝지어진 것을 고르시오. [국가, 산지명(수출항, 농장) 분류]",
+    "description": "",
+    "example": [
+      "브라질, Cerrado No.2",
+      "과테말라, Antigua SHG",
+      "인도네시아, Mandhelling Grade 2",
+      "에티오피아, Harrar Grade 1"
+    ],
+    "answer": "과테말라, Antigua SHG",
+    "commentary": ""
+  },
+  {
+    "id": 517,
+    "title": "다음 제시된 보기의 조건으로 제조된 커피의 종류는?",
+    "description": "<ul><li>생두 상태의 커피콩을 증기로 쪄, 수분율이 50~60%가 되게 한다.</li><li>솔벤트, 물, CO₂ 등을 사용하여 커피와 카페인을 분리한다.</li><li>다시 커피 성분을 넣고 열풍 건조시켜 수분율을 13%로 맞춘다.<li></ul>",
+    "example": ["블렌딩(Blending) 커피", "인스턴트(Instant) 커피", "향(Flavor) 커피", "디카페인(Decaffeinated) 커피"],
+    "answer": "디카페인(Decaffeinated) 커피",
+    "commentary": ""
+  },
+  {
+    "id": 518,
+    "title": "우유를 약간 데우면서 교반을 시키면 거품이 일어난다. 이와 관련된 현상 중에서 맞게 설명한 것은?",
+    "description": "",
+    "example": [
+      "우유를 데워주면 우유의 표면장력이 높아진다.",
+      "우유는 순수한 물보다 표면장력이 높다.",
+      "탈지유는 전유(Whole milk)보다 거품이 더 잘 일어난다.",
+      "우유 단백질의 일종인 카제인은 거품 형성을 용이하게 한다."
+    ],
+    "answer": "우유 단백질의 일종인 카제인은 거품 형성을 용이하게 한다.",
+    "commentary": ""
+  },
+  {
+    "id": 521,
     "title": "",
     "description": "",
     "example": ["", "", "", ""],
