@@ -3,8 +3,8 @@
     "id": 1,
     "title": "나라에 따라 커피 어원(語源)이 다르게 전해져 왔는데, 다음 내용 중 그 연결이 옳게 짝지어진 것은 어느 것인가?",
     "description": "<ul><li>가) Turkey - Cezve</li><li>나) Arabia - Qahwah</li><li>다) Ethiopia - Kaffa</li><li>라) Greece - Briki</li></ul>",
-    "example": ["가), 나)", "가), 다)", "나), 다)", "나), 라)"],
-    "answer": "",
+    "example": ["가, 나", "가, 다", "나, 다", "나, 라"],
+    "answer": "나, 다",
     "commentary": ""
   },
   {
