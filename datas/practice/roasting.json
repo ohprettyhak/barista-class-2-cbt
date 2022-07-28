@@ -2290,6 +2290,69 @@
   },
   {
     "id": 319,
+    "title": "미성숙 생두가 많이 혼합되면 로스팅 단계에서 문제가 발생되며, 추출한 커피는 떫은맛이 강하고 맛이 없다. 다음 중 가장 큰 이유는 무엇인가?",
+    "description": "",
+    "example": [
+      "성숙도에 따른 크기의 차이",
+      "성숙도에 따른 성분 구성의 차이",
+      "성숙도에 따른 타닌 함량의 차이",
+      "성숙도에 따른 카페인 함량의 차이"
+    ],
+    "answer": "성숙도에 따른 성분 구성의 차이",
+    "commentary": ""
+  },
+  {
+    "id": 320,
+    "title": "로스팅 작업의 시간경과에 따라 생두의 색변화가 발생한다. 이러한 일련의 변화를 옳은 순서로 나열한 것은?",
+    "description": "",
+    "example": [
+      "녹색(Green) → 노란색(Yellow) → 밝은 갈색(Light brown) → 갈색(Medium brown) → 짙은 갈색(Dark brown) → 검은색(Dark)",
+      "녹색(Green) → 밝은 갈색(Light brown) → 노란색(Yellow) → 갈색(Medium brown) → 짙은 갈색(Dark brown) → 검은색(Dark)",
+      "녹색(Green) → 밝은 갈색(Light brown) → 노란색(Yellow) → 짙은 갈색(Dark brown) → 갈색(Medium brown) → 검은색(Dark)",
+      "녹색(Green) → 노란색(Yellow) → 갈색(Medium brown) → 밝은 갈색(Light brown) → 짙은 갈색(Dark brown) → 검은색(Dark)"
+    ],
+    "answer": "녹색(Green) → 노란색(Yellow) → 밝은 갈색(Light brown) → 갈색(Medium brown) → 짙은 갈색(Dark brown) → 검은색(Dark)",
+    "commentary": ""
+  },
+  {
+    "id": 321,
+    "title": "다음은 로스팅 과정에서 발생되는 현상이다. ( )안에 들어갈 알맞은 용어를 바르게 나열한 것은?",
+    "description": "생두에 존재하는 ( )은(는) 로스팅 과정에서 생두 내부로 열 전달율을 높여주는 역할, 즉 생두 표면에서 내부로 ( )이(가) 전달되는 것을 돕는 중요한 역할을 한다. 이것은 열전도율을 고려할 때 끓는점 이하에서 좋은 ( )이(가) 된다. 하지만, 온도가 올라가는 수분의 기화가 시작되면 ( )이(가) 전달되는 것을 방해하게 된다.",
+    "example": ["열–전도체–열-수분", "수분–열–전도체-열", "열–열–전도체-수분", "열–수분–전도체-열"],
+    "answer": "수분–열–전도체-열",
+    "commentary": ""
+  },
+  {
+    "id": 332,
+    "title": "커피를 너무 짧은 시간 로스팅 해서, 당과 탄소화합물이 정상적으로 생성되지 않았을 때 나타나는 맛의 결함은?",
+    "description": "",
+    "example": ["Rubbery", "Green", "Scorched", "Baked"],
+    "answer": "Green",
+    "commentary": ""
+  },
+  {
+    "id": 333,
+    "title": "로스팅에 의한 원두의 물리적 변화 중 로스팅이 진행됨에 따라 값이 증가하지 않는 것은?",
+    "description": "",
+    "example": ["휘발성 성분", "가용성 성분", "부피", "밀도"],
+    "answer": "밀도",
+    "commentary": ""
+  },
+  {
+    "id": 334,
+    "title": "커피를 추출 할 때 향미에 가장 적게 영향을 주는 것은?",
+    "description": "",
+    "example": [
+      "원두의 로스팅 정도",
+      "분쇄된 커피의 양과 추출 시 사용되는 물의 비율",
+      "추출 시 사용한 물의 품질과 온도",
+      "커피를 마시는 사람의 기호도"
+    ],
+    "answer": "커피를 마시는 사람의 기호도",
+    "commentary": ""
+  },
+  {
+    "id": 335,
     "title": "",
     "description": "",
     "example": ["", "", "", ""],

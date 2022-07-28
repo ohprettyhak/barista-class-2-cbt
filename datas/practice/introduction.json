@@ -2158,14 +2158,6 @@
     "commentary": ""
   },
   {
-    "id": 262,
-    "title": "커피 재배 지역을 발전시키고 커피 재배 농가의 삶의 질을 개선하여 장기적인 관점에서 안정적으로 커피를 생산할 수 있도록 하려는 시스템에 의하여 공급되는 커피를 무엇이라 하는가?",
-    "description": "",
-    "example": ["Fair trade coffee", "Organic coffee", "Shaded coffee", "Sustainable coffee"],
-    "answer": "Sustainable coffee",
-    "commentary": ""
-  },
-  {
     "id": 263,
     "title": "커피를 살 때 먼저 고려해야 될 사항 두 가지를 꼽는다면 무엇을 고려해야 될까?",
     "description": "",
@@ -3690,6 +3682,140 @@
   },
   {
     "id": 611,
+    "title": "다음 커피의 역사적 사건들을 오래 된 순서로 바르게 나열한 것을 고르시오.",
+    "description": "<ul><li>가. 영국 런던에 커피하우스가 처음 문을 열다.</li><li>나. 커피가 베니스에 처음 소개되다.</li><li>다. 바흐(Bach)가 커피 칸타타를 작곡하다.</li><li>라. 인도네시아 자바(Java)에 커피가 처음 재배되다.</li></ul>",
+    "example": ["나-가-라-다", "나-라-가-다", "나-가-다-라", "나-다-가-라"],
+    "answer": "나-가-라-다",
+    "commentary": ""
+  },
+  {
+    "id": 615,
+    "title": "커피는 식물학적으로 크게 세 가지 종으로 나눌 수 있다. 다음은 어떤 종(種)에 대한 설명인가?",
+    "description": "쓴맛이 강하고 향이 독특하다. 주로 동남아시아나 서아프리카 등 과거 유럽의 식민지에서 재배하는데 에스프레소 커피에도 사용된다.",
+    "example": ["로부스타 종", "아라비카 종", "리베리카 종", "엑셀사 종"],
+    "answer": "로부스타 종",
+    "commentary": ""
+  },
+  {
+    "id": 616,
+    "title": "커피 꽃가루받이(Pollination/수분)에 대한 다음 설명 중 사실과 다른 것은?",
+    "description": "",
+    "example": [
+      "아라비카 종은 주로 자가 수분(Self-pollination)을 한다.",
+      "아라비카 종의 개화 상태는 약 이삼일 정도이다.",
+      "꽃가루받이(Pollination/수분)은 주로 곤충에 의해 이루어진다.",
+      "강한 비, 바람은 수분을 방해하는 주된 원인이 된다."
+    ],
+    "answer": "꽃가루받이(Pollination/수분)은 주로 곤충에 의해 이루어진다.",
+    "commentary": ""
+  },
+  {
+    "id": 620,
+    "title": "다음 중 다른 세 나라와 커피를 분류하는 방법이 다른 국가는?",
+    "description": "",
+    "example": ["브라질", "인도네시아", "에티오피아", "케냐"],
+    "answer": "케냐",
+    "commentary": ""
+  },
+  {
+    "id": 621,
+    "title": "커피 재배 농가의 삶의 질을 개선하고 수질과 토양, 생물 다양성을 보호하며 장기적인 관점에서 안정적으로 생산하는 커피를 ( )라 한다",
+    "description": "",
+    "example": [
+      "유기농 커피(Organic coffee)",
+      "공정 무역 커피(Fair trade coffee)",
+      "지속가능 커피(Sustainable coffee)",
+      "셰이딩 커피(Shading coffee)"
+    ],
+    "answer": "지속가능 커피(Sustainable coffee)",
+    "commentary": ""
+  },
+  {
+    "id": 623,
+    "title": "SCAA 기준에 따른 결점두(Defect bean)의 발생 원인이 잘못 연결된 것은?",
+    "description": "",
+    "example": [
+      "Withered Bean: 발육 기간 동안 수분 공급 부족",
+      "Black Bean: 늦은 수확, 흙과의 장시간 접촉",
+      "Shell: 불완전한 탈곡과정",
+      "Floater: 부적절한 보관이나 건조"
+    ],
+    "answer": "Shell: 불완전한 탈곡과정",
+    "commentary": ""
+  },
+  {
+    "id": 624,
+    "title": "커피체리에 있는 점액질에 대한 설명으로 틀린 것은?",
+    "description": "",
+    "example": [
+      "0.5-2.0mm 두께의 매우 미끄러운 물질로서 투명하고 색깔이 없다. 공기에 노출되면, 효소의 산화작용으로 갈색으로 변한다.",
+      "점액질은 완숙체리, 미숙체리, 과숙체리 모두에 생성되어지므로, 과육제거(Pulping) 시 필요한 윤활작용을 하여 펄핑이 쉽게 되도록 도와준다.",
+      "프로토펙틴(Protopectin)의 가수분해와 효소에 영향을 받아 펙틴(Pectin)의 감소로 점액질이 제거된다. 만약 습식발효가 72시간 지나면 자극적인 약품냄새가 날 수 있다.",
+      "펙틴(Pectins)과 당류(Sugars)로 구성되어 있다. 프로토펙틴(Protopectin)이 33%, 포도당(Glucose)과 과당(Fructose)이 30%, 자당(Sucrose)이 20%, 섬유소(Cellulose)와 회분(Ash)이 17% 들어있다."
+    ],
+    "answer": "점액질은 완숙체리, 미숙체리, 과숙체리 모두에 생성되어지므로, 과육제거(Pulping) 시 필요한 윤활작용을 하여 펄핑이 쉽게 되도록 도와준다.",
+    "commentary": ""
+  },
+  {
+    "id": 626,
+    "title": "커피 가공 방법은 크게 건식법, 펄프드 내추럴, 습식법으로 나뉜다. 2000년 이후 이 세 가지 가공 방법에 공통적으로 적용되는 공정은 무엇인가?",
+    "description": "",
+    "example": ["이물질 제거, 선별과정", "펄핑과정", "발효과정", "점액질 제거과정"],
+    "answer": "이물질 제거, 선별과정",
+    "commentary": ""
+  },
+  {
+    "id": 627,
+    "title": "커피 생산국마다 수확 기준 일자가 달라 통계 자료에 혼동이 있을 수 있으므로 ICO에서는 ‘Coffee year’를 정해 산정일자를 통일시키고 있다. 다음 중 ‘Coffee year’의 산정 기준 일자는?",
+    "description": "",
+    "example": ["1월 1일", "4월 1일", "7월 1일", "10월 1일"],
+    "answer": "7월 1일",
+    "commentary": ""
+  },
+  {
+    "id": 631,
+    "title": "아라비카의 여러 품종에 대한 다음 설명 중 잘못된 내용은 어느 것인가?",
+    "description": "",
+    "example": [
+      "카투아이(Catuai)는 문도노보(Mundo Novo)와 카투라(Caturra)의 교배종이다.",
+      "문도노보(Mundo Novo)는 티피카(Typica)와 버번(Bourbon)의 교배종 이다.",
+      "티피카(Typica)는 옐로 버번(Yellow Bourbon)에서 파생된 품종이다.",
+      "HdT(Hibrido de Timor)는 아라비카와 로부스타의 교배종이다."
+    ],
+    "answer": "티피카(Typica)는 옐로 버번(Yellow Bourbon)에서 파생된 품종이다.",
+    "commentary": ""
+  },
+  {
+    "id": 634,
+    "title": "다음 디카페인 커피에 대한 설명으로 맞는 것은?",
+    "description": "",
+    "example": [
+      "우리나라에서 최초 개발되어 동결건조 방식으로 생산한다.",
+      "카페인은 100% 제거되나, 커피 맛과 향의 차이는 없다.",
+      "물 추출법, 용매추출법, 초임계 추출법 등이 있다.",
+      "로스팅 완료 후 물과 이산화탄소를 이용하여 가공한다."
+    ],
+    "answer": "물 추출법, 용매추출법, 초임계 추출법 등이 있다.",
+    "commentary": ""
+  },
+  {
+    "id": 636,
+    "title": "밀크 스티밍(Steaming) 과정에서 우유의 단백질 외에 거품의 안정성에 중요한 역할을 하는 성분은?",
+    "description": "",
+    "example": ["칼슘", "유당", "인", "지방"],
+    "answer": "지방",
+    "commentary": ""
+  },
+  {
+    "id": 640,
+    "title": "다음 커피 메뉴(1잔 기준) 중 칼로리가 가장 높은 것은?",
+    "description": "",
+    "example": ["화이트초콜릿 모카", "카페라떼", "카푸치노", "아메리카노"],
+    "answer": "화이트초콜릿 모카",
+    "commentary": ""
+  },
+  {
+    "id": 641,
     "title": "",
     "description": "",
     "example": ["", "", "", ""],
