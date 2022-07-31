@@ -2036,19 +2036,6 @@
     "commentary": ""
   },
   {
-    "id": 283,
-    "title": "커피의 다음 성분들 가운데, 커피를 마시는 순간 커피 추출액의 표면에서 생긴 증기에 의해 입속에서 느껴지는 향의 주된 성분은?",
-    "description": "",
-    "example": [
-      "케톤(Ketone)이나 알데히드(Aldehyde) 계통의 휘발성 성분",
-      "비휘발성 액체 상태의 유기 성분",
-      "지질 같은 비 용해성 액체와 수용성 고체 물질",
-      "에스테르(Ester) 화합물"
-    ],
-    "answer": "비휘발성 액체 상태의 유기 성분",
-    "commentary": ""
-  },
-  {
     "id": 284,
     "title": "다음은 향기에 대한 원칙이다. 틀린 것은?",
     "description": "",
@@ -2352,11 +2339,48 @@
     "commentary": ""
   },
   {
-    "id": 335,
-    "title": "",
+    "id": 341,
+    "title": "다음 중 커피의 음용이 체내 흡수에 영향을 미치는 영양소는?",
     "description": "",
-    "example": ["", "", "", ""],
-    "answer": "",
+    "example": ["Fe(철분)", "Na(나트륨)", "Ca(칼슘)", "K(칼륨)"],
+    "answer": "Fe(철분)",
+    "commentary": ""
+  },
+  {
+    "id": 343,
+    "title": "생두에 함유되어 있는 유리당 중 함량이 가장 높은 것은?",
+    "description": "",
+    "example": ["Sucrose", "Glucose", "Fructose", "Mannose"],
+    "answer": "Sucrose",
+    "commentary": ""
+  },
+  {
+    "id": 348,
+    "title": "커피의 향미 결점 중 다음에 해당하는 것은?",
+    "description": "로스팅 후 변화(Post-roasting/Staling)에 해당하는 커피의 향미 결점으로, 로스팅 후 산패가 진행되어 향기 성분이 소멸되어 발생하는 결점을 말한다.",
+    "example": ["Rancid", "Stale", "Flat", "Insipid"],
+    "answer": "Flat",
+    "commentary": ""
+  },
+  {
+    "id": 349,
+    "title": "SCAA 커피 커핑 규정에 있어서 견본준비(Sample preparation)에 관한 내용이다. 틀린 것은?",
+    "description": "",
+    "example": [
+      "커핑 하기 전 24시간 이내에 로스팅하고 8시간 이상 가스를 배출해야 한다.",
+      "적합하게 정수한 물 150ml와 커피 8.25g 비율로 침지하여 평가한다.",
+      "물의 양에 맞추어 일정 비율로 커피를 분쇄하여 계량한다.",
+      "커핑에 사용하는 물은 투명하고 냄새가 없어야 한다."
+    ],
+    "answer": "물의 양에 맞추어 일정 비율로 커피를 분쇄하여 계량한다.",
+    "commentary": ""
+  },
+  {
+    "id": 350,
+    "title": "다음 커피 추출 기구 중 일반적으로 분쇄된 원두의 입자가 작은 순서대로 나열하면?",
+    "description": "<ul><li>가. 에스프레소 머신</li><li>나. 모카포트</li><li>다. 사이폰</li><li>라. 프렌치 프레소</li><li>마. 이브릭</li></ul>",
+    "example": ["가-다-라-마-나", "마-가-나-다-라", "나-가-다-마-라", "마-나-가-라-다"],
+    "answer": "마-가-나-다-라",
     "commentary": ""
   }
 ]
