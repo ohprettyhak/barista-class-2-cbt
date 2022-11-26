@@ -20,7 +20,7 @@ export default function Navigation() {
           <Link
             href="/"
             display="flex"
-            gap={1}
+            gap={1.5}
             opacity="1"
             userSelect="none"
             alignItems="center"
@@ -28,7 +28,7 @@ export default function Navigation() {
               opacity: '0.7',
             }}
           >
-            <Image src="https://cbt.haklee.me/barista-c2/favicon.ico" w={5} h={5} alt="logo" />
+            <Image src="https://cbt.haklee.me/barista-c2/favicon/android-chrome-192x192.png" w={5} h={5} alt="logo" />
             {config.title}
           </Link>
           <Text
