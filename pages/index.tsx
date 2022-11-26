@@ -1,10 +1,10 @@
-import Link from 'next/link';
 import { useState } from 'react';
-import { Grid, Box, Button, Heading, Text } from '@chakra-ui/react';
+import { Grid, Box, Heading, Text } from '@chakra-ui/react';
 import { Select } from 'chakra-react-select';
 
-import Layout from '@/components/layout';
-import CardButton from '@/components/card-button';
+import Link from '@/components/Link';
+import Layout from '@/components/Layout';
+import CardButton from '@/components/CardButton';
 
 import config from '@/config/config';
 
@@ -32,24 +32,13 @@ export default function HomePage() {
         placeItems="start"
         justifyContent="space-around"
       >
+        <CardButton href="/practice/introduction" title="커피 학개론" description="커피 학개론 문제를 풉니다." />
         <CardButton
-          href="/practice/[slug]"
-          slug="introduction"
-          title="커피 학개론"
-          description="커피 학개론 문제를 풉니다."
-        />
-        <CardButton
-          href="/practice/[slug]"
-          slug="roasting"
+          href="/practice/roasting"
           title="커피 배전"
           description="로스팅과 향미 평가(커피 배전) 문제를 풉니다."
         />
-        <CardButton
-          href="/practice/[slug]"
-          slug="extraction"
-          title="커피 추출"
-          description="커피 추출 문제를 풉니다."
-        />
+        <CardButton href="/practice/extraction" title="커피 추출" description="커피 추출 문제를 풉니다." />
         <CardButton href="/practice" title="모든 문제" description="모든 연습 문제를 풉니다." />
       </Grid>
       <Heading mt={16} fontSize="lg">
@@ -89,11 +78,9 @@ export default function HomePage() {
           defaultValue={config.exam[0]}
           onChange={onChangeExamSelect}
         />
-        <Box>
-          <Link href={`exam/${examId}`} passHref>
-            <Button as="a" borderRadius="8px">
-              문제 풀기 →
-            </Button>
+        <Box display="flex">
+          <Link href={`exam/${examId}`} variant="button">
+            문제 풀기 →
           </Link>
         </Box>
       </Grid>

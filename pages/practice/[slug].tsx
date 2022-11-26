@@ -1,11 +1,11 @@
-import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import fs from 'fs';
 import path from 'path';
 import _ from 'lodash';
 import { Flex, Box, Heading, Text, Button, Divider, useToast } from '@chakra-ui/react';
 
-import Layout from '@/components/layout';
+import Link from '@/components/Link';
+import Layout from '@/components/Layout';
 import { PracticeProps, ProblemDataProps, ProblemStates, ProblemResult } from '@/types/types';
 
 export default function PracticePage({ slug, data }: PracticeProps) {
@@ -107,10 +107,8 @@ export default function PracticePage({ slug, data }: PracticeProps) {
                 백점 기준 환산 : {Math.round(((100 * result.correctCount) / problems.length) * 100) / 100}점
               </Text>
               <Flex mt={6} justifyContent="center" gap={4}>
-                <Link href="/" passHref>
-                  <Button as="a" h="auto" px={3} py={2} fontSize="sm">
-                    &#8592; 메인 가기
-                  </Button>
+                <Link href="/" variant="button" h="auto" px={3} py={2} fontSize="sm">
+                  &#8592; 메인 가기
                 </Link>
                 {result.wrongCount > 0 && (
                   <Button h="auto" px={3} py={2} fontSize="sm" onClick={() => solveWorngProblem()}>

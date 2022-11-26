@@ -1,6 +1,6 @@
-const config = require("./config");
+const config = require('./config');
 
-export default {
+const seo = {
   titleTemplate: `%s - ${config.title}`,
   defaultTitle: config.title,
   description: config.description,
@@ -14,8 +14,10 @@ export default {
         url: config.url + config.og_image,
       },
     ],
-    type: "website",
+    type: 'website',
     locale: config.locale,
     site_name: config.title,
   },
 };
+
+export default seo;
